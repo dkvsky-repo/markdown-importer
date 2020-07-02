@@ -27,11 +27,11 @@ function getData(contentType, subDir = undefined) {
     const matterResult = matter(fileContents);
     return {
       id,
-      meta: matterResult.data,
+      metadata: matterResult.data,
       content: matterResult.content
     };
   });
-  
+
   return data;
 }
 
